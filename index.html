@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blog Ẩm Thực — Tên Blog</title>
+<link rel="stylesheet" href="style.css">
+  <!-- Google Fonts (optional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* =======================
+       CSS CHUNG / VARIABLES
+       ======================= */
+    
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">BT</div>
+        <div>
+          <h1>Tên Blog Ẩm Thực</h1>
+          <div class="muted" style="font-size:13px">Công thức, review quán & cảm nhận ẩm thực</div>
+        </div>
+      </div>
+
+      <nav class="nav-links">
+        <a href="#">Trang chủ</a>
+        <a href="#">Công thức</a>
+        <a href="#">Quán ngon</a>
+        <a href="#">Liên hệ</a>
+      </nav>
+
+      <div style="display:flex;gap:12px;align-items:center">
+        <div class="search" role="search" aria-label="Tìm kiếm bài viết">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden><path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <input type="search" placeholder="Tìm món, nguyên liệu..." aria-label="Tìm kiếm" />
+        </div>
+
+        <!-- Simple theme toggle (JS below) -->
+        <button id="themeToggle" title="Chuyển theme" style="background:transparent;border:0;cursor:pointer;font-weight:700">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-card">
+        <div class="hero-text">
+          <h2>Chào mừng đến với Blog Ẩm Thực</h2>
+          <p>Khám phá công thức, review quán ngon và mẹo nấu ăn được thử nghiệm — mỗi tuần một món mới!</p>
+          <a class="cta" href="#latest">Xem bài mới</a>
+        </div>
+        <div style="width:260px">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=1b69b6b1c9d51a3f57f1bda7a4f0b8b1" alt="Món ăn" style="border-radius:12px; width:100%; height:160px; object-fit:cover;">
+        </div>
+      </div>
+    </section>
+
+    <section class="layout">
+      <section>
+        <!-- Featured post -->
+        <div class="post-list" id="latest">
+          <article class="featured post">
+            <div class="featured-text">
+              <div class="meta">Công thức • 12/10/2025 • 10 phút</div>
+              <h3>Gà rán giòn phong cách Hàn Quốc</h3>
+              <p class="excerpt">Bí quyết lớp vỏ giòn rụm, nước sốt cay ngọt đậm đà — hướng dẫn chi tiết từng bước để làm tại nhà.</p>
+              <div style="margin-top:10px">
+                <span class="tag">#mónnhanh</span>
+                <span class="tag">#HànQuốc</span>
+              </div>
+            </div>
+            <div class="thumb">
+              <img src="https://tse4.mm.bing.net/th/id/OIP.EXS7QFdETdHTmGlT4mlm9QHaE8?pid=Api&P=0&h=220" alt="Gà rán">
+            </div>
+          </article>
+
+          <!-- Grid of posts -->
+          <article class="post">
+            <div class="thumb"><img src="https://tse4.mm.bing.net/th/id/OIP._iu9kozRYB1qE0GH4ucRiwAAAA?pid=Api&P=0&h=220" alt="Bún"></div>
+            <div class="meta">Street food • 10/10/2025</div>
+            <h3>Hướng dẫn làm bún bò thơm ngon</h3>
+            <p class="excerpt">Nước dùng trong, đậm vị, mẹo luộc giò và làm nước mắm chấm.</p>
+            <div class="tags"><span class="tag">#bún</span> <span class="tag">#VN</span></div>
+          </article>
+
+          <article class="post">
+            <div class="thumb"><img src=https://menungoido.com/wp-content/uploads/2021/11/78135b1df87633286a67.jpg" alt="Salad"></div>
+            <div class="meta">Healthy • 05/10/2025</div>
+            <h3>Salad bơ hạt điều — bữa trưa thanh nhẹ</h3>
+            <p class="excerpt">Gợi ý kết hợp sốt và topping để salad không nhạt.</p>
+            <div class="tags"><span class="tag">#healthy</span><span class="tag">#salad</span></div>
+          </article>
+
+          <article class="post">
+            <div class="thumb"><img src="https://tse2.mm.bing.net/th/id/OIP.mv1IExwnKOG0BqUj2wE_vQHaDz?pid=Api&P=0&h=220" alt="Bánh ngọt"></div>
+            <div class="meta">Dessert • 01/10/2025</div>
+            <h3>Bánh tart chanh siêu đơn giản</h3>
+            <p class="excerpt">Độ chua – ngọt cân bằng, đế giòn tan.</p>
+            <div class="tags"><span class="tag">#bánh</span><span class="tag">#dessert</span></div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="card profile">
+          <img src="pthang.jpg" alt="Tác giả">
+          <div>
+            <strong>Nguyễn Phương Thắng</strong>
+            <div class="muted" style="margin-top:6px">Yêu ẩm thực, thử món & chụp ảnh đồ ăn</div>
+            <div style="margin-top:8px;display:flex;gap:8px">
+              <a href="#" class="tag">Follow</a>
+              <a href="#" class="tag">Liên hệ</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card subscribe">
+          <strong>Nhận bài mới</strong>
+          <div class="muted">Đăng ký để nhận công thức hàng tuần</div>
+          <input type="email" placeholder="Email của bạn" aria-label="Nhập email">
+          <button style="margin-top:8px;padding:10px;border-radius:10px;border:0;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:white;width:100%;font-weight:700">Đăng ký</button>
+        </div>
+
+        <div class="card">
+          <strong>Bài viết phổ biến</strong>
+          <div class="popular-list" style="margin-top:10px">
+            <div class="popular-item">
+              <img src="https://kanawa.vn/wp-content/uploads/2022/08/pho-ga-ha-noi-ngon.jpg" alt="item" style="width:64px;height:48px;object-fit:cover;border-radius:8px">
+              <div>
+                <div style="font-weight:700">Phở gà Hà Nội</div>
+                <div class="muted">Công thức từ đầu bếp</div>
+              </div>
+            </div>
+
+            <div class="popular-item">
+              <img src="https://afamilycdn.com/150157425591193600/2024/4/11/ca-phe-trung-00250587-1712844881220-171284488278387811576.png" alt="item" style="width:64px;height:48px;object-fit:cover;border-radius:8px">
+              <div>
+                <div style="font-weight:700">Cà phê trứng tại nhà</div>
+                <div class="muted">Bí quyết lớp kem mịn</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <strong>Tags</strong>
+          <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:8px">
+            <span class="tag">#CôngThức</span>
+            <span class="tag">#QuánNgon</span>
+            <span class="tag">#Healthy</span>
+            <span class="tag">#StreetFood</span>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <footer>
+      <div class="muted">© 2025 Tên Blog Ẩm Thực — Copyright: Nguyễn Phương Thắng</div>
+    </footer>
+  </main>
+
+  <script>
+    // Theme toggle
+    const btn = document.getElementById('themeToggle');
+    btn.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      btn.textContent = document.documentElement.classList.contains('dark') ? '☀️' : '🌙';
+    });
+
+    // Simple accessible keyboard shortcut for search (/) — optional
+    document.addEventListener('keydown', (e) => {
+      if (e.key === '/') {
+        const input = document.querySelector('.search input');
+        if (input) { input.focus(); e.preventDefault(); }
+      }
+    });
+  </script>
+</body>
+</html>
